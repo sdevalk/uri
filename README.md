@@ -1,13 +1,13 @@
 URI
 ==============================
 
-Version: 1.0.0
+Version: 2.0.0
 
 Docker
 ------------
 
     $ docker-compose build
-    $ docker-compose run --rm app /bin/bash
+    $ docker-compose run --rm node /bin/bash
 
 Installation
 ------------
@@ -18,6 +18,10 @@ Tests
 ------------
 
     $ npm run test
+
+Coding conventions
+------------
+https://hapijs.com/styleguide
 
 Example
 ------------
