@@ -11,7 +11,6 @@
   "repository": "git://github.com/sdevalk/uri.git",
   "scripts": {
     "lint": "lab -d -f -L",
-    "start": "node lib/index.js",
     "test": "lab -L -a code -t 100",
     "test-cov-html": "lab -a code -r html -o coverage.html"
   },
@@ -20,7 +19,7 @@
     "url-template": "2.0.8"
   },
   "devDependencies": {
-    "code": "5.1.2",
-    "lab": "15.1.2"
+    "code": "5.2.0",
+    "lab": "15.4.1"
   }
 }
