@@ -15,11 +15,11 @@
     "test-cov-html": "lab -a code -r html -o coverage.html"
   },
   "dependencies": {
-    "hoek": "5.0.2",
+    "hoek": "5.0.4",
     "url-template": "2.0.8"
   },
   "devDependencies": {
     "code": "5.2.0",
-    "lab": "15.4.1"
+    "lab": "16.0.0"
   }
 }

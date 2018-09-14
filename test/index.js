@@ -1,18 +1,11 @@
 'use strict';
 
-
-// Load modules
-
 const Code = require('code');
 const Lab = require('lab');
 const Uri = require('..');
 
-
-// Test shortcuts
-
 const { describe, it } = exports.lab = Lab.script();
 const expect = Code.expect;
-
 
 describe('Uri', () => {
 
@@ -20,12 +13,9 @@ describe('Uri', () => {
 
         it('throws error if argument is not a string', () => {
 
-            const fn = () => {
+            const fn = () => Uri.join(123);
 
-                Uri.join(123);
-            };
-
-            expect(fn).to.throw(Error, 'Argument is not a string');
+            expect(fn).to.throw('Argument is not a string');
         });
 
         it('returns a joined string', () => {
@@ -75,22 +65,16 @@ describe('Uri', () => {
 
         it('throws error if template is not a string', () => {
 
-            const fn = () => {
+            const fn = () => Uri.create(null, {});
 
-                Uri.create(null, {});
-            };
-
-            expect(fn).to.throw(Error, 'Argument "template" is not a string');
+            expect(fn).to.throw('Argument "template" is not a string');
         });
 
         it('throws error if params is not an object', () => {
 
-            const fn = () => {
+            const fn = () => Uri.create('/my/template', null);
 
-                Uri.create('/my/template', null);
-            };
-
-            expect(fn).to.throw(Error, 'Argument "params" is not an object');
+            expect(fn).to.throw('Argument "params" is not an object');
         });
 
         it('returns an empty uri if an empty template was set', () => {

@@ -3,9 +3,12 @@ URI
 
 Version: 2.0.0
 
+Development
+==============================
+
 Build image
 ------------
-    docker-compose build
+    docker-compose build --no-cache
 
 Logon to container
 ------------
@@ -19,9 +22,8 @@ Coding conventions
 ------------
 https://hapijs.com/styleguide
 
-Install
-------------
-    npm install https://github.com/sdevalk/uri.git --save
+Usage
+==============================
 
 Example
 ------------
