@@ -1,6 +1,6 @@
 {
   "name": "uri",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "uri",
   "engines": {
     "node": ">=8.9.0"
@@ -15,11 +15,11 @@
     "test-cov-html": "lab -a code -r html -o coverage.html"
   },
   "dependencies": {
-    "hoek": "5.0.4",
+    "hoek": "6.1.2",
     "url-template": "2.0.8"
   },
   "devDependencies": {
-    "code": "5.2.0",
-    "lab": "16.0.0"
+    "code": "5.2.4",
+    "lab": "18.0.0"
   }
 }
